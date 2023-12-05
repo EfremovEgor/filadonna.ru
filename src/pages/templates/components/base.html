@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {% load static %}
+
+  <head>
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="foo" />
+    <meta name="keywords" content="foo,bar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>{{title}}</title>
+
+    {% load i18n %}
+  </head>
+
+  <body class="page Verbox-initialized supportDesktop supportOffline">
+    <div id="body" class="uk-section-default uk-preserve-color">
+      {% include "./header.html" %} {% block content %} {% endblock content %}
+      {% include "./footer.html" %}
+    </div>
+  </body>
+</html>

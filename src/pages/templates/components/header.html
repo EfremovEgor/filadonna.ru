@@ -1,0 +1,433 @@
+{% load static %}
+<div
+  class="uk-visible@l"
+  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; start:500;  animation: uk-animation-slide-top;"
+>
+  <nav class="uk-navbar-container header">
+    <div class="uk-container">
+      <div uk-navbar>
+        <div class="uk-navbar-center" style="width: 100%">
+          <ul
+            class="uk-navbar-nav"
+            style="width: 100%; justify-content: space-between"
+          >
+            <li class="uk-active">
+              <a href="/">
+                <div class="uk-grid-small" uk-grid>
+                  <div>
+                    <img
+                      class="header-logo-image"
+                      src="{% static 'images/logo.png' %}"
+                    />
+                  </div>
+                  <div class="uk-flex uk-flex-middle">
+                    <div>
+                      <img
+                        class="header-logo-text-image"
+                        src="{% static 'images/logo-text.png' %}"
+                      />
+                      <span class="header-logo-text"
+                        >Бобинная пряжа из италии</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <div uk-navbar>
+                <div class="uk-navbar-left">
+                  <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                      <form class="uk-search uk-search-default site-search">
+                        <span uk-search-icon></span>
+                        <input
+                          class="uk-search-input"
+                          type="search"
+                          placeholder="Поиск по сайту"
+                          aria-label="Search"
+                        />
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+                <div class="uk-navbar-right">
+                  <div class="uk-grid-small" uk-grid>
+                    <div class="header-instagram">
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/filadonna"
+                      >
+                        <img
+                          class="header-instagram-img"
+                          src="{% static 'images/instagram.png' %}"
+                        />
+                      </a>
+                    </div>
+                    <div class="header-telegram">
+                      <a target="_blank" href="https://t.me/filadonna">
+                        <img
+                          class="header-basket-img"
+                          src="{% static 'images/telegram.png' %}"
+                        />
+                      </a>
+                    </div>
+                    <div class="basket">
+                      <a class="header-basket-link" href="/basket">
+                        <div class="uk-flex uk-flex-middle">
+                          <img
+                            class="header-basket-img"
+                            src="{% static 'images/shopping-basket.png' %}"
+                          />
+                          <span class="uk-badge counter">10</span>
+                          <span>Корзина</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="uk-navbar-nav">
+                <li class="uk-active">
+                  <a class="uk-link-text" uk-icon="chevron-down" href="#"
+                    >Меню</a
+                  >
+                  <div
+                    class="uk-navbar-dropdown header-nav-outer"
+                    uk-dropdown="offset: 0 "
+                  >
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li class="uk-active">
+                        <a class="uk-link-active" href="#">Готовые изделия</a>
+                      </li>
+                      <li class="uk-active">
+                        <a
+                          class="uk-link-active"
+                          uk-icon="chevron-right"
+                          href="#"
+                          >Пряжа бобинная</a
+                        >
+                        <div
+                          class="uk-navbar-dropdown header-nav-inner"
+                          uk-dropdown="target-x: !.header-nav-outer; pos: right-top; offset: 0; "
+                        >
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Кашемир с мериносом/шелком/альпакой</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Шёлк</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Меринос/Шерсть</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Меринос с кашемиром/шелком/ангорой</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Кашемир</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Мохер</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Альпака/Верблюд/Як</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Ангора</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Твид</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Хлопок/Лён</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Смесовые составы</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Фантазийная пряжа</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Пряжа с люрексом</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Пряжа с пайетками и бисером</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Harmony</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="uk-active">
+                        <a
+                          class="uk-link-active"
+                          uk-icon="chevron-right"
+                          href="#"
+                          >Пряжа моточная</a
+                        >
+                        <div
+                          class="uk-navbar-dropdown header-nav-inner"
+                          uk-dropdown="target-x: !.header-nav-outer; pos: right-top; offset: 0; "
+                        >
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Моточная Lana Grossa</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Моточная пряжа Katia concept</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Моточная пряжа Lana Gatto</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="uk-active">
+                        <a
+                          class="uk-link-active"
+                          uk-icon="chevron-right"
+                          href="#"
+                          >Аксессуары</a
+                        >
+                        <div
+                          class="uk-navbar-dropdown header-nav-inner"
+                          uk-dropdown="target-x: !.header-nav-outer; pos: right-top; offset: 0; "
+                        >
+                          <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Перья на ленте</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Пуговицы</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Кружево</a
+                              >
+                            </li>
+                            <li class="uk-active">
+                              <a
+                                class="uk-link-active header-menu-subnavbar-link"
+                                href="#"
+                                >Средства для стирки</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="uk-active">
+                        <a class="uk-link-active" href="#">Спицы/крючки</a>
+                      </li>
+                      <li class="uk-active">
+                        <a class="uk-link-active" href="#">Сертификат</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="uk-active">
+                  <a class="uk-link-active" href="#">Новинки </a>
+                </li>
+                <li class="uk-active">
+                  <a class="uk-link-active" href="#">Распродажа </a>
+                </li>
+                <li class="uk-active">
+                  <a class="uk-link-active" href="#">Доставка и оплата </a>
+                </li>
+                <li class="uk-active">
+                  <a class="uk-link-active" href="#">Правила </a>
+                </li>
+                <li class="uk-active">
+                  <a class="uk-link-active" href="#">Статьи </a>
+                </li>
+                <li class="uk-active">
+                  <a class="uk-link-active" href="#">Контакты </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<nav class="uk-navbar-container uk-hidden@l header-mobile">
+  <div class="uk-container">
+    <div uk-navbar>
+      <div class="uk-navbar-left">
+        <a href="/">
+          <div class="uk-grid-small" uk-grid>
+            <div>
+              <img
+                class="header-logo-image-mobile"
+                src="{% static 'images/logo.png' %}"
+              />
+            </div>
+
+            <img
+              class="header-logo-text-image-mobile"
+              src="{% static 'images/logo-text.png' %}"
+            />
+          </div>
+        </a>
+      </div>
+      <div class="uk-navbar-right">
+        <div class="basket">
+          <a class="header-basket-link" href="/basket">
+            <div class="uk-flex uk-flex-middle">
+              <img
+                class="header-basket-img"
+                src="{% static 'images/shopping-basket.png' %}"
+              />
+              <span class="uk-badge counter">10</span>
+            </div>
+          </a>
+        </div>
+        <a
+          class="uk-navbar-toggle"
+          uk-toggle
+          uk-navbar-toggle-icon
+          href="#offcanvas-nav"
+        ></a>
+        <div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true">
+          <div class="uk-offcanvas-bar light-bar uk-light">
+            <button
+              class="uk-offcanvas-close uk-icon uk-close"
+              type="button"
+              uk-close=""
+              aria-label="Close"
+            ></button>
+            <ul class="uk-nav uk-nav-default uk-list-collapse uk-list">
+              <li class="uk-active">
+                <a href="#"><span class="uk-nav-header">Распродажа</span></a>
+              </li>
+              <li class="uk-active">
+                <a href="#"><span class="uk-nav-header">Доставка</span> </a>
+              </li>
+              <li class="uk-active">
+                <a href="#"><span class="uk-nav-header">Правила</span></a>
+              </li>
+              <li class="uk-active">
+                <a href="#"><span class="uk-nav-header">Статьи</span></a>
+              </li>
+              <li class="uk-active">
+                <a href="#"><span class="uk-nav-header">Контакты</span></a>
+              </li>
+            </ul>
+            <ul class="uk-nav uk-nav-default uk-margin-small-top">
+              <li>
+                <span class="uk-nav-header">Меню</span>
+
+                <ul class="uk-nav-sub">
+                  <li class="uk-active"><a href="#">Готовые изделия</a></li>
+                  <li class="uk-active"><a href="#">Пряжа бабинная</a></li>
+                  <li class="uk-active"><a href="#">Пряжа моточная</a></li>
+                  <li class="uk-active"><a href="#">Аксессуары</a></li>
+                  <li class="uk-active"><a href="#">Спицы/крючки</a></li>
+                  <li class="uk-active"><a href="#">Сертификат</a></li>
+                </ul>
+              </li>
+
+              <li class="uk-nav-divider"></li>
+            </ul>
+            <div class="uk-margin-small-top">
+              <form class="uk-search uk-search-default">
+                <span uk-search-icon></span>
+                <input
+                  class="uk-search-input"
+                  type="search"
+                  placeholder="Поиск по сайту"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
