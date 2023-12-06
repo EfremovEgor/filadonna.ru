@@ -1,5 +1,5 @@
 {% extends 'components/base.html' %} {% block content %} {%load static%}
-<div class="index-slider uk-container" style="min-height: 1000px">
+<div class="wrapper uk-container">
   <div
     class="uk-position-relative uk-visible-toggle uk-light index-slider"
     index="0"
@@ -71,6 +71,14 @@
               height="280"
               alt=""
             />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">10%</span>
+              </div>
+              <div class="tooltip-new">
+                <div class="tooltip-new-image"></div>
+              </div>
+            </div>
           </div>
           <div class="sales-item-body">
             <span class="sales-item-title">
@@ -99,11 +107,16 @@
         >
           <div class="uk-card-media-top">
             <img
-              src="{% static 'images/temp/2.webp' %}"
+              src="{% static 'images/temp/1.webp' %}"
               width="280"
               height="280"
               alt=""
             />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">5%</span>
+              </div>
+            </div>
           </div>
           <div class="sales-item-body">
             <span class="sales-item-title">
@@ -132,11 +145,16 @@
         >
           <div class="uk-card-media-top">
             <img
-              src="{% static 'images/temp/3.webp' %}"
+              src="{% static 'images/temp/1.webp' %}"
               width="280"
               height="280"
               alt=""
             />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">30%</span>
+              </div>
+            </div>
           </div>
           <div class="sales-item-body">
             <span class="sales-item-title">
@@ -165,11 +183,19 @@
         >
           <div class="uk-card-media-top">
             <img
-              src="{% static 'images/temp/4.webp' %}"
+              src="{% static 'images/temp/1.webp' %}"
               width="280"
               height="280"
               alt=""
             />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">10%</span>
+              </div>
+              <div class="tooltip-new">
+                <div class="tooltip-new-image"></div>
+              </div>
+            </div>
           </div>
           <div class="sales-item-body">
             <span class="sales-item-title">
@@ -193,6 +219,302 @@
         </div>
       </a>
     </div>
+  </div>
+  <div class="advantages-background">
+    <div
+      class="advantages uk-grid-match uk-child-width-1-2 uk-child-width-1-4@m uk-flex-wrap uk-flex-center"
+      uk-grid
+    >
+      <div class="advantage-container">
+        <img src="{% static 'images/p1.png' %}" alt="" />
+        <span>Высокое качество продукции </span>
+      </div>
+      <div class="advantage-container">
+        <img src="{% static 'images/p2.png' %}" alt="" />
+        <span>Доставка по миру </span>
+      </div>
+      <div class="advantage-container">
+        <img src="{% static 'images/p3.png' %}" alt="" />
+        <span>Акции, скидки и спецпредложения </span>
+      </div>
+      <div class="advantage-container">
+        <img src="{% static 'images/p4.png' %}" alt="" />
+        <span>Конкурентные цены </span>
+      </div>
+    </div>
+  </div>
+  <div class="news">
+    <a class="news-heading-link" href="/novosti">
+      <h2 class="news-heading">Новости</h2>
+    </a>
+    <div
+      class="news-container uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-4@l"
+      uk-grid
+    >
+      <div class="news-item">
+        <img
+          src="{% static 'images/no-image.png' %}"
+          width="104"
+          height="104"
+          alt=""
+        />
+        <div class="news-details">
+          <div class="news-details-text-container">
+            <span class="news-details-date">24.07.2023</span>
+            <span class="news-details-name">Акция!! На всю пряжу от 10%</span>
+          </div>
+          <a class="news-details-more-link" href="">Подробнее</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <img
+          src="{% static 'images/no-image.png' %}"
+          width="104"
+          height="104"
+          alt=""
+        />
+        <div class="news-details">
+          <div class="news-details-text-container">
+            <span class="news-details-date">24.07.2023</span>
+            <span class="news-details-name">Акция!! На всю пряжу от 10%</span>
+          </div>
+          <a class="news-details-more-link" href="">Подробнее</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <img
+          src="{% static 'images/no-image.png' %}"
+          width="104"
+          height="104"
+          alt=""
+        />
+        <div class="news-details">
+          <div class="news-details-text-container">
+            <span class="news-details-date">24.07.2023</span>
+            <span class="news-details-name">Акция!! На всю пряжу от 10%</span>
+          </div>
+          <a class="news-details-more-link" href="">Подробнее</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <img
+          src="{% static 'images/no-image.png' %}"
+          width="104"
+          height="104"
+          alt=""
+        />
+        <div class="news-details">
+          <div class="news-details-text-container">
+            <span class="news-details-date">24.07.2023</span>
+            <span class="news-details-name">Акция!! На всю пряжу от 10%</span>
+          </div>
+          <a class="news-details-more-link" href="">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="new_items">
+    <a class="new_items-heading-link" href="/brands">
+      <h2 class="new_items-heading">Новинки</h2>
+    </a>
+    <div
+      class="uk-grid-small index-new_items-cards uk-child-width-1-1 uk-child-width-1-2@s uk-flex-wrap uk-child-width-1-4@l uk-flex-center uk-grid-match"
+      uk-grid
+    >
+      <a class="uk-width-expand@m good-card-clickable" href="">
+        <div
+          class="good-card uk-card-hover uk-card uk-card-default uk-card-small"
+        >
+          <div class="uk-card-media-top">
+            <img
+              src="{% static 'images/temp/1.webp' %}"
+              width="280"
+              height="280"
+              alt=""
+            />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">10%</span>
+              </div>
+              <div class="tooltip-new">
+                <div class="tooltip-new-image"></div>
+              </div>
+            </div>
+          </div>
+          <div class="good-item-body">
+            <span class="good-item-title">
+              Меринос принтованный Calza 6029 270м
+            </span>
+            <div class="good-footer-container">
+              <div class="good-footer-details">
+                <span
+                  uk-tooltip="title: Меринос: 70%, Мохер: 25%, Кашемир: 5%"
+                  class="good-footer-composition"
+                  >80%Wv 20%Pa</span
+                >
+                <div class="good-footer-price">
+                  <span class="good-footer-old-price">5.3 р./г</span>
+                  <span class="good-footer-current-price">4.77₽</span>
+                </div>
+              </div>
+              <span class="good-item-buy-button" href="">Купить</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="uk-width-expand@m good-card-clickable" href="">
+        <div
+          class="good-card uk-card-hover uk-card uk-card-default uk-card-small"
+        >
+          <div class="uk-card-media-top">
+            <img
+              src="{% static 'images/temp/1.webp' %}"
+              width="280"
+              height="280"
+              alt=""
+            />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">10%</span>
+              </div>
+              <div class="tooltip-new">
+                <div class="tooltip-new-image"></div>
+              </div>
+            </div>
+          </div>
+          <div class="good-item-body">
+            <span class="good-item-title">
+              Меринос принтованный Calza 6029 270м
+            </span>
+            <div class="good-footer-container">
+              <div class="good-footer-details">
+                <span
+                  uk-tooltip="title: Меринос: 70%, Мохер: 25%, Кашемир: 5%"
+                  class="good-footer-composition"
+                  >80%Wv 20%Pa</span
+                >
+                <div class="good-footer-price">
+                  <span class="good-footer-old-price">5.3 р./г</span>
+                  <span class="good-footer-current-price">4.77₽</span>
+                </div>
+              </div>
+              <span class="good-item-buy-button" href="">Купить</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="uk-width-expand@m good-card-clickable" href="">
+        <div
+          class="good-card uk-card-hover uk-card uk-card-default uk-card-small"
+        >
+          <div class="uk-card-media-top">
+            <img
+              src="{% static 'images/temp/1.webp' %}"
+              width="280"
+              height="280"
+              alt=""
+            />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">10%</span>
+              </div>
+              <div class="tooltip-new">
+                <div class="tooltip-new-image"></div>
+              </div>
+            </div>
+          </div>
+          <div class="good-item-body">
+            <span class="good-item-title">
+              Меринос принтованный Calza 6029 270м
+            </span>
+            <div class="good-footer-container">
+              <div class="good-footer-details">
+                <span
+                  uk-tooltip="title: Меринос: 70%, Мохер: 25%, Кашемир: 5%"
+                  class="good-footer-composition"
+                  >80%Wv 20%Pa</span
+                >
+                <div class="good-footer-price">
+                  <span class="good-footer-old-price">5.3 р./г</span>
+                  <span class="good-footer-current-price">4.77₽</span>
+                </div>
+              </div>
+              <span class="good-item-buy-button" href="">Купить</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a class="uk-width-expand@m good-card-clickable" href="">
+        <div
+          class="good-card uk-card-hover uk-card uk-card-default uk-card-small"
+        >
+          <div class="uk-card-media-top">
+            <img
+              src="{% static 'images/temp/1.webp' %}"
+              width="280"
+              height="280"
+              alt=""
+            />
+            <div class="uk-overlay icons-container uk-position-top-right">
+              <div class="tooltip-discount">
+                <span class="">10%</span>
+              </div>
+              <div class="tooltip-new">
+                <div class="tooltip-new-image"></div>
+              </div>
+            </div>
+          </div>
+          <div class="good-item-body">
+            <span class="good-item-title">
+              Меринос принтованный Calza 6029 270м
+            </span>
+            <div class="good-footer-container">
+              <div class="good-footer-details">
+                <span
+                  uk-tooltip="title: Меринос: 70%, Мохер: 25%, Кашемир: 5%"
+                  class="good-footer-composition"
+                  >80%Wv 20%Pa</span
+                >
+                <div class="good-footer-price">
+                  <span class="good-footer-old-price">5.3 р./г</span>
+                  <span class="good-footer-current-price">4.77₽</span>
+                </div>
+              </div>
+              <span class="good-item-buy-button" href="">Купить</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="manufacturers">
+    <a class="manufacturers-heading-link" href="/brands">
+      <h2 class="manufacturers-heading">Производители</h2>
+    </a>
+    <a href="">
+      <img src="{% static 'images/brands.png' %}" alt="" />
+    </a>
+  </div>
+  <div class="about">
+    <article class="uk-article">
+      <h2>Бобинная пряжа из Италии с доставкой по России</h2>
+      <p>
+        Интернет-магазин filadonna.ru - это широкий выбор итальянской пряжи на
+        любой вкус. Более 600 наименовний продуции от различных производителей.
+        Для каждой бобины мы постарались разместить подробную информацию о
+        товаре: цвет, метраж, состав. Наш магазин внимательно следит за
+        качеством фотографий товарных позиций - вы можете подробно рассмотреть
+        цвет и другие важные характеристики пряжи не отходя от компьютера.
+      </p>
+      <p>
+        В нашем магазине вы можете заказать доставку заказа с помощью
+        транспортных компаний: СДЕК и Почта Росии. При заказе достаточно указать
+        город доставки, а сайт предлолжи актульную стоимость услуги на текущий
+        момент. Вы также можете оплатить заказа прямо с сайта с помощью
+        пластиковых карт системы Visa, MasterCard, МИР. Оплата производится безе
+        комиссии с помошью сервиса компании Сбербанк.
+      </p>
+    </article>
   </div>
 </div>
 

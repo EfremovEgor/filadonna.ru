@@ -1,6 +1,7 @@
 {% load static %}
 <div
   class="uk-visible@l"
+  style="{% if request.path != "/" %}    box-shadow: 0px 8px 8px rgba(224, 224, 226, 0.85);  {% endif %}" 
   uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; start:500;  animation: uk-animation-slide-top;"
 >
   <nav class="uk-navbar-container header">
@@ -315,16 +316,16 @@
                   <a class="uk-link-active" href="#">Распродажа </a>
                 </li>
                 <li class="uk-active">
-                  <a class="uk-link-active" href="#">Доставка и оплата </a>
+                  <a class="uk-link-active" href="/dostavka-i-oplata">Доставка и оплата </a>
                 </li>
                 <li class="uk-active">
-                  <a class="uk-link-active" href="#">Правила </a>
+                  <a class="uk-link-active" href="/pravila">Правила </a>
                 </li>
                 <li class="uk-active">
                   <a class="uk-link-active" href="#">Статьи </a>
                 </li>
                 <li class="uk-active">
-                  <a class="uk-link-active" href="#">Контакты </a>
+                  <a class="uk-link-active" href="/kontakty">Контакты </a>
                 </li>
               </ul>
             </li>
@@ -335,7 +336,7 @@
   </nav>
 </div>
 
-<nav class="uk-navbar-container uk-hidden@l header-mobile">
+<nav class="uk-navbar-container uk-hidden@l header-mobile" style="{% if request.path != "/" %}    box-shadow: 0px 8px 8px rgba(224, 224, 226, 0.85);  {% endif %}" >
   <div class="uk-container">
     <div uk-navbar>
       <div class="uk-navbar-left">
@@ -386,16 +387,18 @@
                 <a href="#"><span class="uk-nav-header">Распродажа</span></a>
               </li>
               <li class="uk-active">
-                <a href="#"><span class="uk-nav-header">Доставка</span> </a>
+                <a href="/dostavka-i-oplata"><span class="uk-nav-header">Доставка и оплата</span> </a>
               </li>
               <li class="uk-active">
-                <a href="#"><span class="uk-nav-header">Правила</span></a>
+                <a href="/pravila"><span class="uk-nav-header">Правила</span></a>
               </li>
               <li class="uk-active">
                 <a href="#"><span class="uk-nav-header">Статьи</span></a>
               </li>
               <li class="uk-active">
-                <a href="#"><span class="uk-nav-header">Контакты</span></a>
+                <a href="/kontakty"
+                  ><span class="uk-nav-header">Контакты</span></a
+                >
               </li>
             </ul>
             <ul class="uk-nav uk-nav-default uk-margin-small-top">
